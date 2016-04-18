@@ -78,7 +78,7 @@ d) write numberParser function and check if it's working with sample inputs.
 
 e) write parseEngine function and check if it's working with sample inputs.
 
-f) check if input is object or array and call the respective function.
+f) check if input is object or array and call the objectParser function or arrayParser function.
 
 g) inside that function, extract each element and call parseEngine function.
 
@@ -89,22 +89,22 @@ I) return the JSON output from array or object parser depending on input.
 
 ###FUNCTIONS:
 
-nullParser: Returns null and the remaining input.
+**nullParser:** Returns null and the remaining input.
 
-boolParser: Returns boolean and remaining input.
+**boolParser:** Returns boolean and remaining input.
 
-stringParser: Returns String and the remaining input.
+**stringParser:** Returns String and the remaining input.
 
-numberParser: Returns number and the remaining input.
+**numberParser:** Returns number and the remaining input.
 
-arrayParser: Parses elements inside opening and closing square brackets.
+**arrayParser:** Parses elements inside opening and closing square brackets.
 
-objectParser: Parses keys and values between flower braces.
+**objectParser:** Parses keys and values between flower braces.
 
-spaceParser: Removes the extra spaces. (will write this after object and array parser is working)
+**spaceParser:** Removes the extra spaces. (will write this after object and array parser is working)
 
-parseEngine: calls all the parsers and returns parsed data.
+**parseEngine:** calls all the parsers and returns parsed data.
 
-Write code incrementally and test line by line and function by function.
+**Write code incrementally and test line by line and function by function.**
 
 
