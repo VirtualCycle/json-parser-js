@@ -88,13 +88,21 @@ I) return the JSON output from array or object parser depending on input.
 
 
 FUNCTIONS:
+
 nullParser: Returns null and the remaining input.
+
 boolParser: Returns boolean and remaining input.
+
 stringParser: Returns String and the remaining input.
+
 numberParser: Returns number and the remaining input.
+
 arrayParser: Parses elements inside opening and closing square brackets.
+
 objectParser: Parses keys and values between flower braces.
+
 spaceParser: Removes the extra spaces. (will write this after object and array parser is working)
+
 parseEngine: calls all the parsers and returns parsed data.
 
 Write code incrementally and test line by line and function by function.
