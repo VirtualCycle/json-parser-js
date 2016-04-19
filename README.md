@@ -5,31 +5,31 @@
 
 ###INPUTS:
 
-1. '[1,true,”Rahul”,null]'
+1. '[1,true,"Rahul",null]'
 
 
-2. '{“Adarsh”:123}'
+2. '{"Adarsh":123}'
 
 
-3. '[1,true,”Rahul”,{“Adarsh”:123},null]'
+3. '[1,true,"Rahul",{"Adarsh":123},null]'
 
 
-4. '{“abc”:[1,true,”Rahul”,null]}'
+4. '{"abc":[1,true,"Rahul",null]}'
 
 
 ###OUTPUTS:
 
 
-1. [1,true,“Rahul”,null]
+1. [1,true,"Rahul",null]
 
 
-2. {“Adarsh”:123}
+2. {"Adarsh":123}
 
 
-3. [1,true,“Rahul”,{“Adarsh”:123},null]
+3. [1,true,"Rahul",{"Adarsh":123},null]
 
 
-4. { “abc”:[1,true,”Rahul”,null]}
+4. { "abc":[1,true,"Rahul",null]}
 
 
 
@@ -58,22 +58,22 @@ b) write boolParser function and check if it's working with sample inputs.
 
 c) write stringParser function and check if it's working with sample inputs.
 	
-	input: '”abc”, 12'
-	output: “abc”, ', 12'
+	input: '"abc", 12'
+	output: "abc", ', 12'
 
 
-	input: '12,”rahul”'
+	input: '12,"rahul"'
 	output: null
 
 d) write numberParser function and check if it's working with sample inputs.
 
-	input: '12,”rahul”'
-	output: 12, ',”rahul”'
+	input: '12,"rahul"'
+	output: 12, ',"rahul"'
 
 	input: '1.45'
 	output: 1.45
 
-	input: '”rahul”,1.45'
+	input: '"rahul",1.45'
 	output: null
 
 e) write parseEngine function and check if it's working with sample inputs.
