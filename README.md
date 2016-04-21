@@ -37,44 +37,52 @@
 
 
 a) Write nullParser function and check if it is working with sample inputs.
-	
-	input: '12'
-	output: null
+    
+    input: '12'
+    output: null
 
-	input: 'null, abc'
-	output: null, ', abc'
+    input: 'null, abc'
+    output: null, ', abc'
 
 b) write boolParser function and check if it's working with sample inputs.
-	
-	input: 'true, 12'
-	output: true, ', 12'
+    
+    input: 'true, 12'
+    output: true, ', 12'
 
-	input: 'false, abc'
-	output: false, ', abc'
+    input: 'false, abc'
+    output: false, ', abc'
 
-	input: 'abc'
-	output: null
+    input: 'abc'
+    output: null
 
 
 c) write stringParser function and check if it's working with sample inputs.
-	
-	input: '"abc", 12'
-	output: "abc", ', 12'
+    
+    input: '"abc", 12'
+    output: "abc", ', 12'
 
 
-	input: '12,"rahul"'
-	output: null
+    input: '12,"rahul"'
+    output: null
 
 d) write numberParser function and check if it's working with sample inputs.
 
-	input: '12,"rahul"'
-	output: 12, ',"rahul"'
+    input: '12,"rahul"'
+    output: 12, ',"rahul"'
 
-	input: '1.45'
-	output: 1.45
+    input: '1.45'
+    output: 1.45
 
-	input: '"rahul",1.45'
-	output: null
+    input: '"rahul",1.45'
+    output: null
+
+e) write spaceParser function and check if it's working with sample inputs.
+
+    input: '  "Rahul"'
+    output: '"Rahul"'
+
+    input: '12, "Rahul"'
+    output: '12, "Rahul"'
 
 e) write parseEngine function and check if it's working with sample inputs.
 
@@ -96,6 +104,8 @@ I) return the JSON output from array or object parser depending on input.
 **stringParser:** Returns String and the remaining input.
 
 **numberParser:** Returns number and the remaining input.
+
+**spaceParser:** Removes spaces and returns remaining input.
 
 **arrayParser:** Parses elements inside opening and closing square brackets.
 
