@@ -9,7 +9,7 @@ function spaceParser(input) {
 		// console.log(input.slice(indx));
 		return input.slice(indx);
 	}
-	else 
+	else
 		// console.log(input);
 		return input;
 }
@@ -42,7 +42,7 @@ function stringParser(input) {
         // console.log([inp.slice(1,indx+1), inp.slice(indx+2)])
         return [inp.slice(1,indx+1), inp.slice(indx+2)];
     }
-    return null && con;
+    return null;
 }
 
 function numberParser(input) {
@@ -59,7 +59,7 @@ function numberParser(input) {
             // var indx = inp.match(/\d+/g)[0].length;
             // var num = parseFloat(inp.slice(0,indx));
             // return [num, inp.slice(indx)];
-        // } 
+        // }
         else return null;
     // }
     return null;
@@ -89,9 +89,9 @@ function arrayParser(input) {
         		array.push(objectParser(inp.slice(0,indx+1)));
         		inp = inp.slice(indx);
         	} else {
-        	// console.log(inp);        		
+        	// console.log(inp);
         		parsed = parseEngine(inp);
-        		if(parsed == null || parsed[1] == '') 
+        		if(parsed == null || parsed[1] == '')
         			break;
         		array.push(parsed[0]);
         	    inp = parsed[1].slice(1);
@@ -116,8 +116,8 @@ function objectParser(input) {
         	// console.log(inp);
         	var data = stringParser(inp);
         	var key = data[0];
-        	var remaining = data[1];     
-        	// console.log('key');   	
+        	var remaining = data[1];
+        	// console.log('key');
         	// console.log(key);
         	if (key === null)
         		break;
@@ -137,12 +137,12 @@ function objectParser(input) {
         		var indx = inp.indexOf('}');
         		value = objectParser(inp.slice(1,indx));
         		inp = inp.slice(indx);
-        	} else {        		
+        	} else {
         		value = parseEngine(inp);
         		// console.log(value);
         	    inp = value[1].slice(1);
         	}
-        	if(value == null) 
+        	if(value == null)
         		break;
         	// console.log(key[0]);
         	obj[key[0]] = value;
@@ -216,4 +216,3 @@ function parseEngine(input) {
 // console.log(JSON.stringify(objectParser('{"ID":null,"name":"Doe","first-name":"John","age":25,"hobbies":["reading","cinema",{"sports":["volley-ball","snowboard"]}],"address":{}}'),null,4));
 
 console.log(JSON.stringify(arrayParser('[1,true,[12,34],null]')));
-
