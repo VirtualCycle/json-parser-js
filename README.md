@@ -1,9 +1,9 @@
 
 
-#JSON PARSER IN JAVASCRIPT
+# JSON PARSER IN JAVASCRIPT
 
 
-###INPUTS:
+### INPUTS:
 
 1. '[1,true,"Rahul",null]'
 
@@ -17,7 +17,7 @@
 4. '{"abc":[1,true,"Rahul",null]}'
 
 
-###OUTPUTS:
+### OUTPUTS:
 
 
 1. [1,true,"Rahul",null]
@@ -33,7 +33,7 @@
 
 
 
-###PSEUDO-CODE:
+### PSEUDO-CODE:
 
 
 a) Write nullParser function and check if it is working with sample inputs.
@@ -95,7 +95,7 @@ h) parseEngine function call all other parsers one by one and returns parsed dat
 I) return the JSON output from array or object parser depending on input.
 
 
-###FUNCTIONS:
+### FUNCTIONS:
 
 **nullParser:** Returns null and the remaining input.
 
